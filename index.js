@@ -37,12 +37,13 @@ function createWebsocket(url) {
   function startPinger() {
     pingerInterval = setInterval(() => {
       console.log('Message Send Ping');
-      ws.send(JSON.stringify({
-        id: nextMessageId,
-        type: 'ping',
-        pingTime: Date.now()
-      }));
-      nextMessageId++;
+      // ws.send(JSON.stringify({
+      //   id: nextMessageId,
+      //   type: 'ping',
+      //   pingTime: Date.now()
+      // }));
+      // nextMessageId++;
+      ws.ping(null, false, true);
     }, 5000);
   }
 
