@@ -1,0 +1,19 @@
+{
+  "name": "slack-rtm-min",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal Slack RTM client",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankur Oberoi <aoberoi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^2.3.1"
+  }
+}
